@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Patisseurie en ligne </title>
+
+</head>
+
+<body>
+     <!-- barre de navigation -->
+     <nav>
+        <div class="logo">
+            <img src="logo.png" width="70px">
+        </div>
+
+
+        <div class="onglets">
+            <a href="index.html" class="link">Acceuil</a>
+            <a href="catégories.html" class="link">Catégories</a>
+            <a href="contact.html" class="link">Contact us</a>
+            <a href="connexion.html" class="link">Connexion</a>
+            <form action="">
+                <input type="search" name="" placeholder="Rechercher">
+            </form>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        </div>
+
+    </nav>
+    <!-- fin barre de navigation -->
+
+    <header>
+        <div class="title1">
+            <h1 class="bienvenue">Salmen</h1>
+        </div>
+        <div><img src="https://curiocity.com/toronto/wp-content/uploads/2019/11/jules-patisserie-3.jpg" class="img2">
+        </div>
+    </header>
+
+
+
+    <section class="form">
+        <form action="action_page.php" method="post">
+
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+            </div>
+        </form>
+        </div>
+
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">times;</span>
+            <form class="modal-content" action="">
+                <div class="container">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+                    </p>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signup">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </section>
+
+
+
+
+
+
+    <!-- debut footer -->
+
+    <footer>
+        <div class="footer-content">
+            <div class=" left box">
+                <h2>about us</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur maxime dolore
+                        cupiditate laboriosam possimus quaerat saepe ducimus, iusto placeat velit natus quibusdam iste,
+                        sit illum, quam tempora explicabo alias.</p>
+
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="2">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Tunis,Nabeul</span>
+                    </div>
+                    <div class="3">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+216-55781120</span>
+                    </div>
+                    <div class="4">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">patisserie@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>Contact us</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Message</div>
+                            <textarea rows="2" cols="25" required></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- fin footer -->
+
+</body>
+
+</html>
